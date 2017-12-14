@@ -36,33 +36,35 @@
               </div>
             </div>
 
-            <!-- Creating a row for all the characters -->
+            <!-- Creating the card deck for all the good characters to start -->
 
-            <div class="card-deck">
-              <div class="card col-lg-4 col-md-4">
+            <div class="card-deck" id="goodGuyCards">
+              <button class="card col-lg-4 col-md-4 button" id="yodaCard">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Yoda</h5>
                   <p class="card-text">Health</p>
-                  <p class="card-text"><small class="text-muted">o</small></p>
+                  <p class="card-text"><small class="text-muted" id="yodaHealth"></small></p>
                 </div>
-              </div>
-              <div class="card col-lg-4 col-md-4">
+              </button>
+
+              <button class="card col-lg-4 col-md-4" id="lukeCard">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Luke Skywalker</h5>
                   <p class="card-text">Health</p>
-                  <p class="card-text"><small class="text-muted">0</small></p>
+                  <p class="card-text"><small class="text-muted" id="lukeHealth"></small></p>
                 </div>
-              </div>
-              <div class="card col-lg-4 col-md-4">
+              </button>
+
+              <button class="card col-lg-4 col-md-4" id="obiWanCard">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Obi Wan-Kenobi</h5>
                   <p class="card-text">Health</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <p class="card-text"><small class="text-muted" id="obiWanHealth"></small></p>
                 </div>
-              </div>
+              </button>
             </div>
           </div>
 
@@ -76,33 +78,35 @@
               </div>
             </div>
 
-            <!-- Creating a row for all the characters -->
+            <!-- Creating a row for all the bad characters -->
 
-            <div class="card-deck">
-              <div class="card col-lg-4 col-md-4">
+            <div class="card-deck" id="badGuyCards">
+              <button class="card col-lg-4 col-md-4" id="vadarCard">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Darth Vadar</h5>
                   <p class="card-text">Health</p>
-                  <p class="card-text"><small class="text-muted">o</small></p>
+                  <p class="card-text"><small class="text-muted" id="vadarHealth"></small></p>
                 </div>
-              </div>
-              <div class="card col-lg-4 col-md-4">
+              </button>
+
+              <button class="card col-lg-4 col-md-4" id="kyloCard">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Kylo Ren</h5>
                   <p class="card-text">Health</p>
-                  <p class="card-text"><small class="text-muted">0</small></p>
+                  <p class="card-text"><small class="text-muted" id="kyloHealth"></small></p>
                 </div>
-              </div>
-              <div class="card col-lg-4 col-md-4">
+              </button>
+
+              <button class="card col-lg-4 col-md-4" id="countCard">
                 <img class="card-img-top" src="..." alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Count</h5>
                   <p class="card-text">Health</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <p class="card-text"><small class="text-muted" id="countHealth"></small></p>
                 </div>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -121,13 +125,32 @@
       <div class="container">
         <div class="row">
           <!--Good Character -->
-          <div class="col-lg-4 col-md-4" id="goodCharacter">
+          <div class="col-lg-5 col-md-5" id="goodCharacter">
 
           </div>
 
+          <!-- <div class="container">
+            <div class="row"> -->
+          <div class="col-lg-2 col-md-2">
+            <div class="container">
+              <div class="row">
+
+              </div>
+
+              <div class="row">
+                  <button type="button" class="btn btn-primary btn-danger" id="attackButton">Attack</button>
+              </div>
+
+              <div class="row">
+
+              </div>
+            </div>
+          </div>
+            <!-- </div>
+          </div> -->
 
           <!-- Bad Character -->
-          <div class="col-lg-4 col-md-4" id="badCharacter">
+          <div class="col-lg-5 col-md-5" id="badCharacter">
 
           </div>
 
@@ -138,14 +161,9 @@
       <!-- Creating a div for the bad character -->
 
     <!-- Creating a button to attach -->
-    <div class="container">
-      <div class="row">
-        <button type="button" class="col-lg-2 col-md-2 col-sm-6 col-6 btn btn-primary btn-danger">Attack</button>
-      </div>
-    </div>
+
 
     <!--Link to Javascript -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="./assets/javascript/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="./assets/javascript/game.js"></script>
   </body>
